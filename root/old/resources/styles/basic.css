@@ -1,0 +1,59 @@
+﻿body {
+	margin:5px 125px;
+	padding:25px;
+	font: small/18px "Lucida Grande", "Trebuchet MS", "Bitstream Vera Sans", Verdana, Helvetica, sans-serif; /*stole font list from zeldman.com - love it*/
+}
+
+
+table {
+    border-collapse: collapse;
+}
+table, th, td {
+   border: 1px solid #ccc;
+}
+
+td {
+  padding: 2px;
+}
+/*table tbody:last-of-type td[rowspan]*/
+
+.inclass, .sitin, .officehours, .preptime {
+  background-color: #ffb3b3;
+  font-weight: bold;
+  text-align: center;
+}
+.officehours {
+  background-color: #c6ecd9;
+}
+.sitin {
+  background-color: #b3ccff;
+}
+
+.preptime {
+   background-color: #ffe0b3;
+}
+
+#LessonLinks {
+  position:absolute;
+  top:-5px;
+  right:205px;
+}
+
+#LessonLinks li{
+  list-style-type:none;
+  margin: 0 3px;
+  padding-top:10px;
+  float:left;
+}
+
+#LessonLinks li a{
+  display:block;
+  text-decoration:none;
+  color:#333;
+}
+
+#LessonLinks li a:hover{
+  /*background: url(bullet.gif) no-repeat center -5px;*/
+  text-decoration:underline;
+  color:orange;
+}
