@@ -1,0 +1,52 @@
+
+
+
+body	{
+	margin:0;
+	padding: 0;
+	border: 0;
+	font: small/18px "Lucida Grande", "Trebuchet MS", "Bitstream Vera Sans", Verdana, Helvetica, sans-serif; /*stole font list from zeldman.com - love it*/
+	background-image: none;
+}
+
+
+#allContent {
+	width: 80%;
+	left:40%;
+	top:20%;
+	border: 0;
+}
+
+
+
+
+#courseNav ul, #footer, #LessonLinks, #bug {
+	display:none;
+}
+
+table {
+    border-collapse: collapse;
+}
+table, th, td {
+   border: 1px solid #ccc;
+}
+
+td {
+  padding: 2px;
+}
+
+.inclass, .sitin, .officehours, .preptime {
+  background-color: #ffb3b3;
+  font-weight: bold;
+  text-align: center;
+}
+.officehours {
+  background-color: #c6ecd9;
+}
+.sitin {
+  background-color: #b3ccff;
+}
+
+.preptime {
+   background-color: #ffe0b3;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<title>Prof. Noone's Faculty Site</title>
+<link href="style.css" rel="stylesheet" type="text/css" id="main" media="screen">
+<link href="print.css" rel="stylesheet" type="text/css" id="print" media="print">
+<script src="scripts.js"></script>
+<script type="text/javascript" src="snowstorm.js"></script>
+</head>
+<body>
+<header>
+  <h1>Veronica Noone</h1>
+  <h2>Assistant Professor, School of Business,Technology &amp; Law</h2>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" class="current">About</a></li>
+      <li><a href="loves.html">Photos</a></li>
+      <li><a href="links.html">Links</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<section>
+  <div class="fullpage">
+    <p>This is a sample website for students in CSIT 121. It was published using <a href="https://surge.sh/" target="_blank">surge</a> by installing <a href="https://nodejs.org/" target="_blank">node.js</a> and Surge ClI through <a href="https://www.npmjs.com/" target="_blank">npm</a>. </p>
+    <h3>HTML</h3>
+    <p>Students first learn to hand code HTML in CSIT 121. </p>
+    <h3>CSS</h3>
+    <p>Then we explore how to display our HTML content via CSS. </p>
+    <h3>Javascript </h3>
+    <p>Towards the end of the semester we look at Javascript and how to intergrate it into HTML documents the old school way.  </p>
+    <h3>Hosting</h3>
+    <p>Students are required to publish thier website work.</p>
+    <h3>Goal</h3>
+    <p>Students should leave this class with a better understanding of front-end web standards. How text is marked-up correctly for meaning and how CSS is used for presenation. For many students, this class is their first attempt at "coding" anything. </p>
+     
+  </div>
+</section>
+<footer>
+  <p>This website is an active example for students on progressive enhancement in web design. Click the links below to peel away the CSS and Javascript layers of HTML5. </p>
+  <a href="#" onclick="removeStyleSheet(document.getElementById('main'));">structure</a> <a href="#" onclick="addStyleSheet(document.getElementById('main'));">presentation</a> <a href="#" onclick="history.go(0);">behavior</a> </footer>
+</body>
+</html>
