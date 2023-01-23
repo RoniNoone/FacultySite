@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<title>Prof. Noone's Faculty Site</title>
+<link href="style.css" rel="stylesheet" type="text/css" id="main" media="screen">
+<link href="print.css" rel="stylesheet" type="text/css" id="print" media="print">
+<style>
+	footer {
+		display: none;
+	}
+	textarea {
+		width: 100%;
+		height: 150px;
+		margin: 10px 0;
+	}
+	input {
+		width: 150px;
+	}
+</style>
+<script src="scripts.js"></script>
+	<script>
+function generateEmbed() {
+  
+  var sl = document.getElementById("sharelink").value;  
+  var output = "<iframe src='" + sl + "&action=embedview' width='816px' height='1056px' frameborder='0'>This is an embedded <a target='_blank' href='https://office.com'>Microsoft Office</a> document, powered by <a target='_blank' href='https://office.com/webapps'>Office Online</a>.</iframe>"; 
+  document.getElementById("outputcode").innerHTML = output; 
+}
+	</script>
+</head>
+<body>
+<header>
+  <h1>Veronica Noone </h1>
+  <h2>Assistant Professor, School of Technology, Art, &amp; Design</h2>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="loves.html">Photos</a></li>
+      <li><a href="links.html" class="current">Links</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<section>
+  <div class="fullpage">
+    <h3>OneDrive Embed Code Generator for Office Files</h3>
+	  <p>Paste the "share link" from OneDrive of the file you want to embed.</p>
+	  <input type="url" id="sharelink" name="sharelink">
+	  <button onclick="generateEmbed()">Generate Embed Code</button>
+  <textarea id="outputcode" name="outputcode"></textarea>
+	  <p>Copy the code above and paste it in the HTML view of your Blackboard item or website. </p>
+</section>
+<footer>
+  <p>This website is an active example for students on progressive enhancement in web design. Click the links below to peel away the CSS and Javascript layers of HTML5. </p>
+  <a href="#" onclick="removeStyleSheet(document.getElementById('main'));">structure</a> <a href="#" onclick="addStyleSheet(document.getElementById('main'));">presentation</a> <a href="#" onclick="history.go(0);">behavior</a> </footer>
+</body>
+</html>
