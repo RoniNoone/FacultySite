@@ -77,6 +77,11 @@ section h3 {
 	border-bottom: 1px solid #ccc;
 }
 
+section h4 {
+	margin: 25px auto 10px auto;
+
+}
+
 section p {
 	line-height: 1.4em;
 	margin-bottom: 20px;
@@ -117,7 +122,7 @@ section ul li {
 	padding: 35px;
 	width: 75%;
 	max-width: 700px;
-	margin: 15px;
+	margin: 15px 0 75px 0;
 	display: inline-block;
 	background-color: #fff;
 	box-sizing: border-box;
@@ -154,6 +159,10 @@ td {
 
 .preptime {
    background-color: #ffe0b3;
+}
+
+section .notOneCalendar {
+		font-size: 70%;
 }
 
 
